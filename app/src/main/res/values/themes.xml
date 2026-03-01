@@ -1,0 +1,119 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Sds200_communicator" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">#000000</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+        
+        <item name="android:fontFamily">@font/sds200_keyboard_font</item>
+        <item name="fontFamily">@font/sds200_keyboard_font</item>
+
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+        <item name="navigationViewStyle">@style/Widget.App.NavigationView</item>
+        <item name="cornerRadius">2dp</item>
+    </style>
+
+    <style name="Theme.Sds200_communicator" parent="Base.Theme.Sds200_communicator" />
+
+    <!-- Style for Scanner Screen Elements -->
+    <style name="ScannerDisplayText">
+        <item name="android:fontFamily">@font/sds200_screen_font</item>
+        <item name="fontFamily">@font/sds200_screen_font</item>
+    </style>
+
+    <!-- White Display Buttons with Dark Ripple and Bigger Text -->
+    <style name="DisplayButton" parent="ScannerDisplayText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/display_button_bg</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- UI Components -->
+    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.App.Keyboard.Title</item>
+        <item name="titleTextColor">#FFFFFF</item>
+        <item name="navigationIconTint">#FFFFFF</item>
+    </style>
+
+    <style name="Widget.App.NavigationView" parent="Widget.Material3.NavigationView">
+        <item name="itemTextAppearance">@style/TextAppearance.App.Keyboard</item>
+    </style>
+
+    <style name="TextAppearance.App.Keyboard" parent="">
+        <item name="android:fontFamily">@font/sds200_keyboard_font</item>
+        <item name="fontFamily">@font/sds200_keyboard_font</item>
+    </style>
+
+    <style name="TextAppearance.App.Keyboard.Title" parent="TextAppearance.App.Keyboard">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Keyboard Buttons: Dark background with outline and classic ripple effect -->
+    <style name="KeypadButtonRaw" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_margin">1dp</item>
+        <item name="strokeColor">#444444</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="backgroundTint">#1A1A1A</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/sds200_keyboard_font</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="cornerRadius">2dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="rippleColor">#33FFFFFF</item>
+    </style>
+
+    <style name="KeypadButton.Vertical" parent="KeypadButtonRaw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- numeric key containers (LinearLayouts) with outline and ripple -->
+    <style name="KeypadButtonContainer">
+        <item name="android:background">@drawable/keypad_container_bg</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="KeypadTextMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/sds200_keyboard_font</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="KeypadTextSub">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">7sp</item>
+        <item name="android:fontFamily">@font/sds200_keyboard_font</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Red Connection Switch -->
+    <style name="SdsRedSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="thumbTint">@color/switch_thumb_selector</item>
+        <item name="trackTint">@color/switch_track_selector</item>
+    </style>
+</resources>

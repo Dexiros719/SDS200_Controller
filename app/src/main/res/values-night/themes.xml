@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Night) -->
+    <style name="Base.Theme.Sds200_communicator" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">#000000</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+        
+        <!-- Global Font (Keyboard Font) -->
+        <item name="android:fontFamily">@font/sds200_keyboard_font</item>
+        <item name="fontFamily">@font/sds200_keyboard_font</item>
+
+        <!-- Component Styles -->
+        <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
+        <item name="navigationViewStyle">@style/Widget.App.NavigationView</item>
+        
+        <item name="cornerRadius">2dp</item>
+    </style>
+</resources>
